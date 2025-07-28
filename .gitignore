@@ -1,0 +1,5 @@
+/dataset/
+/.venv
+/saved_models/
+*.jpg
+models/trained_models/**/*.pth

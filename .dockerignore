@@ -1,0 +1,7 @@
+**
+!Dockerfile
+!requirements.txt
+!config.py
+!scripts/inference.py
+!models/deployment_model/model_clean_args_fp16.pth
+!dataset/inference/**
