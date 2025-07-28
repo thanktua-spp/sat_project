@@ -21,4 +21,4 @@ xView 2018 challenge Satellite image object detection
    ```
    python main.py
    ```
-4. Single and Batch Inference paramets, simply modify `config.py` file paremeters.
+4. For additional inference parameters, simply modify `config.py` file.
