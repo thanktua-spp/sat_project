@@ -2,10 +2,23 @@
 
 # Introduction
 
-xView Satellite imaage object detection
+xView 2018 challenge Satellite image object detection
 
 # How to Setup
 
-1. clone repo
-2. pip install requirements
-3. run inference
+1. Clone repo
+
+   ```
+   git clone https://github.com/thanktua-spp/sat_project.git
+   ```
+2. Install requirements
+
+   ```
+   pip install -r requirements.txt
+   ```
+3. Run default inference parameters
+
+   ```
+   python main.py
+   ```
+4. Single and Batch Inference paramets, simply modify `config.py` file paremeters.

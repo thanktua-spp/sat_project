@@ -10,13 +10,8 @@ from datetime import datetime
 
 from config import (
     label2id,
-    CONFIDENCE_THRESHOLD,
     META_FIELDS,
-    CRITICAL_LABELS,
-    SINGLE_INFERENCE,
-    INFERENCE_MODEL_PATH,
-    SINGLE_IMAGE_PATH,
-    INFERENCE_FOLDER_PATH,
+    CRITICAL_LABELS
 )
 
 
@@ -194,18 +189,5 @@ def filter_metadata(raw_json, threshold):
     is_critical = bool(critical_dets)                  # True = down‑link tile
     return is_critical, meta
 
-
-if __name__ == "__main__":            
-    results = run_inference(image_path=SINGLE_IMAGE_PATH,
-                  folder_path=INFERENCE_FOLDER_PATH,
-                  model_path=INFERENCE_MODEL_PATH,
-                  threshold=CONFIDENCE_THRESHOLD,
-                  single_infernce=SINGLE_INFERENCE
-                  )
-    print(results) # Metadata JSON output
-    
-    flag, filtered_metadata = filter_metadata(results, threshold=CONFIDENCE_THRESHOLD)
-    print(f"Is critical: {flag}")
-    print(f"Filtered metadata: {filtered_metadata}")
     
 
